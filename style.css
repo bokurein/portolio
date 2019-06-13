@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+#navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: linear-gradient(#141e30,  #243b55);
+    width: 100vw;
+}
+#navbar ul{
+    text-align: end;
+    padding: 0;
+}
+#navbar ul li{
+list-style-type: none;
+display : inline-block;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-family: 'Carter One', cursive;
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: antiquewhite;
+}
+#welcome-section{
+    width: 100vw;
+    height: 75vh;
+    background: linear-gradient(#06beb6, #48b1bf);
+    padding-top: 25vh;
+}
+#all-info{
+    margin: 0;
+    height:100%;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+}
+#pp{
+    width: 350px;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid gray;
+}
+#all-info h1{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+#describe{
+    font-size: 25px;
+    margin-top: -40px;
+}
+#projects{
+    width: 100vw;
+    background: linear-gradient(#ed4264 ,  #ffedbc);
+    padding-top: 1vh;
+    height: 700px;
+    font-family: 'Baloo Bhaina', cursive;
+}
+#projects h1{
+    font-size: 60px;
+    margin-top: 0;
+}
+.grid{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+.project-tile{
+    padding-top: 20px;
+    text-decoration: none;
+}
+.project-tile img{
+    width: 250px;
+}
+.project-tile h2{
+    margin-top: 0;
+}
+.project-tile:hover{
+    background-color: white;
+    opacity: 0.3;
+}
+.project-tile:visited{
+    color: black;
+}
+#contact{
+    width: 100vw;
+    background: linear-gradient(#43cea2 ,  #185a9d);
+    padding-top: 1vh;
+    height: 400px;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 25px;
+}
+#contact .container{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-column-gap: 50px;
+    justify-content: center;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+}
+#contact .container a{
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 25px;
+    border: 3px solid grey;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: #e0ebe8;
+    text-decoration: none;
+    font-size: 25px;
+}
+#contact .container a:visited{
+    color: black;
+}
+#contact .container a:hover{
+    background-color: white;
+    opacity: 0.3;
+}
+#footer{
+    padding-top: 1vh;
+    margin-right: 0;
+    margin-left:0;
+    margin-bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(#141e30,  #243b55);
+    font-family: 'Baloo Bhaina', cursive;
+}
+#copyright{
+    margin-top: 5px;
+    color: antiquewhite;
+}
+
+
+                                    /*Media query*/
+@media screen and (max-width: 800px){
+    #navbar ul{
+        
+        display: inline-flex;
+        text-align: center;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        font-family: 'Carter One', cursive;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 25px;
+        color: antiquewhite;
+    }
+    #welcome-section{
+        width: 100vw;
+        min-width: 100vw;
+        height: 60vh;
+        background: linear-gradient(#06beb6, #48b1bf);
+        padding-top: 25vh;
+    }
+    #pp{
+        width: 40%;
+        min-width: 150px;
+        max-width: 200px;
+        height: 50%;
+        min-height: 100px;
+        max-height: 200px;
+        border-radius: 100%;
+        border: 3px solid gray;
+    }
+    #all-info h1{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 50vw;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #describe{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 50vw;
+        font-size: 25px;
+        margin-top: 0;
+    }
+    #projects{
+        width: 100vw;
+        background: linear-gradient(#ed4264 ,  #ffedbc);
+        padding-top: 1vh;
+        height: 1200px;
+        font-family: 'Baloo Bhaina', cursive;
+    }
+    .grid{
+        width: 300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .project-tile{
+        padding-top: 20px;
+        text-decoration: none;
+    }
+    .project-tile img{
+        width: 300px;
+    }
+    .tile-name{
+        margin-bottom: 0;
+    }
+    #contact .container a{
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 25px;
+        border: 3px solid grey;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background: #e0ebe8;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    #contact .container{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-column-gap: 0;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    #projects h1{
+        font-size: 30px;
+        margin-top: 0;
+    }
+}
